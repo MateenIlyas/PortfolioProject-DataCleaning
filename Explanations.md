@@ -51,10 +51,7 @@ Removing all Nulls or blanks
 > Set the values as Nulls instead of Blanks '' for the industry column<br />
 > JOIN the same table ON the company column to find multiple occurrences of the same company with blanks/nulls in some cases and not nulls/blanks in others<br />
 > Updating the table to populate the industry name for multiple occurrences of the same company<br />
-> Set the values as Nulls instead of Blanks '' for the total_laid_off column<br />
-> Set the values as Nulls instead of Blanks '' for the percentage_laid_off column<br />
-> Set the values as Nulls instead of Blanks '' for the funds_raised column<br />
-> Set the values as Nulls instead of Blanks '' for the location column
+> Set the values as Nulls instead of Blanks '' for the total_laid_off, percentage_laid_off, funds_raised, and the location column
 
 <br />
 
