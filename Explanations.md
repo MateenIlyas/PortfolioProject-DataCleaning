@@ -32,13 +32,13 @@ Removing Duplicates
 ### Step 3:
 Standardize the alphabet, numbers, or characters in the data
 
-> Check to see if any column has extra whitespaces at the start or end of the actual data
-> Remove the whitespaces by using the TRIM() function
-> Check if the industry names are consistent across all rows by using the DISTINCT option
-> Updating the table with changed data
-> Check the data type as well as the formatting of the 'date' column
-> Formatting can be changed by using the DATE_FORMAT() function
-> It is important to convert the date by using the STR_TO_DATE() function
+> Check to see if any column has extra whitespaces at the start or end of the actual data<br />
+> Remove the whitespaces by using the TRIM() function<br />
+> Check if the industry names are consistent across all rows by using the DISTINCT option<br />
+> Updating the table with changed data<br />
+> Check the data type as well as the formatting of the 'date' column<br />
+> Formatting can be changed by using the DATE_FORMAT() function<br />
+> It is important to convert the date by using the STR_TO_DATE() function<br />
 > Lastly, using ALTER TABLE [table_name] and MODIFY COLUMN to change the data type to 'date' from 'string'
 
 <br />
