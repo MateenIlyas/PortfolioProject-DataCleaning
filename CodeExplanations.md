@@ -56,6 +56,8 @@ Removing all Nulls or blanks
 <br />
 
 ### Step 5:
-Eliminating the unnecessary columns to reduce data size
+Eliminating the unnecessary rows and columns to reduce data size
 
-> 
+> Viewing all such rows where both columns total_laid_off and percentage_laid_off are Nulls by using the SELECT statement along with WHERE condition<br />
+> Deleting all such records as they are totally useless for the upcoming calculations<br />
+> Lastly, dropping the column row_num as it is not needed by using the ALTER TABLE statement along with the DROP COLUMN option
