@@ -1,6 +1,6 @@
 -- Performing the Step 3: Standardizing data
 
--- Working on the company column of `layoffs_staging2` table
+-- Working on the company column of the `layoffs_staging2` table
 SELECT company
 FROM world_layoffs.layoffs_staging2;
 
@@ -13,7 +13,7 @@ UPDATE world_layoffs.layoffs_staging2
 SET company = TRIM(company);
 
 
--- Working on industry column of `layoffs_staging2` table
+-- Working on the industry column of the `layoffs_staging2` table
 SELECT DISTINCT industry
 FROM world_layoffs.layoffs_staging2
 ORDER BY 1;
@@ -51,7 +51,7 @@ FROM world_layoffs.layoffs_staging2
 ORDER BY 1;
 
 
--- Working on country column and displaying all unique country names from the `layoffs_staging2` table to find any irregularities
+-- Working on the country column and displaying all unique country names from the `layoffs_staging2` table to find any irregularities
 SELECT DISTINCT country
 FROM world_layoffs.layoffs_staging2
 ORDER BY 1;
@@ -82,7 +82,7 @@ SELECT `date`,
     DATE_FORMAT(STR_TO_DATE(`date`, '%Y-%m-%d'), '%m-%d-%Y')
 FROM world_layoffs.layoffs_staging2;
 
--- Displaying a third column changing date format to m-d-Y and adding the alias
+-- Displaying a third column, changing the date format to m-d-Y, and adding the alias
 SELECT `date`,
 	STR_TO_DATE(`date`, '%Y-%m-%d') AS converted_date,
     DATE_FORMAT(STR_TO_DATE(`date`, '%Y-%m-%d'), '%m-%d-%Y') AS formatted_date
@@ -92,6 +92,6 @@ FROM world_layoffs.layoffs_staging2;
 UPDATE world_layoffs.layoffs_staging2
 SET `date` = STR_TO_DATE(`date`, '%Y-%m-%d');
 
--- Altering the table `layoffs_staging2` to change the data type of date column from string to date
+-- Altering the table `layoffs_staging2` to change the data type of the date column from string to date
 ALTER TABLE world_layoffs.layoffs_staging2
 MODIFY COLUMN `date` DATE;
