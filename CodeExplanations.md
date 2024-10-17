@@ -32,13 +32,13 @@ Removing Duplicates
 ### Step 3:
 Standardize the alphabet, numbers, or characters in the data
 
-> Check to see if any column has extra whitespaces at the start or end of the actual data<br />
-> Remove the whitespaces by using the TRIM() function<br />
-> Check if the industry names are consistent across all rows by using the DISTINCT option<br />
-> Updating the table with changed data<br />
-> Check the data type as well as the formatting of the 'date' column<br />
-> Formatting can be changed by using the DATE_FORMAT() function<br />
-> It is important to convert the date by using the STR_TO_DATE() function<br />
+> Check to see if any column has extra whitespaces at the start or end of the actual data<br /><br />
+> Remove the whitespaces by using the TRIM() function<br /><br />
+> Check if the industry names are consistent across all rows by using the DISTINCT option<br /><br />
+> Updating the table with changed data<br /><br />
+> Check the data type as well as the formatting of the 'date' column<br /><br />
+> Formatting can be changed by using the DATE_FORMAT() function<br /><br />
+> It is important to convert the date by using the STR_TO_DATE() function<br /><br />
 > Lastly, using ALTER TABLE [table_name] and MODIFY COLUMN to change the data type to 'date' from 'string'
 
 <br />
@@ -46,11 +46,11 @@ Standardize the alphabet, numbers, or characters in the data
 ### Step 4:
 Removing all Nulls or blanks
 
-> At first, check whether there are any Nulls or Blanks in the industry column by using IS NULL or = ''<br />
-> Manually set the industry that was left blank for a particular company by using the UPDATE TABLE statement<br />
-> Set the values as Nulls instead of Blanks '' for the industry column<br />
-> JOIN the same table ON the company column to find multiple occurrences of the same company with blanks/nulls in some cases and not nulls/blanks in others<br />
-> Updating the table to populate the industry name for multiple occurrences of the same company<br />
+> At first, check whether there are any Nulls or Blanks in the industry column by using IS NULL or = ''<br /><br />
+> Manually set the industry that was left blank for a particular company by using the UPDATE TABLE statement<br /><br />
+> Set the values as Nulls instead of Blanks '' for the industry column<br /><br />
+> JOIN the same table ON the company column to find multiple occurrences of the same company with blanks/nulls in some cases and not nulls/blanks in others<br /><br />
+> Updating the table to populate the industry name for multiple occurrences of the same company<br /><br />
 > Set the values as Nulls instead of Blanks '' for the total_laid_off, percentage_laid_off, funds_raised, and the location column
 
 <br />
@@ -58,6 +58,6 @@ Removing all Nulls or blanks
 ### Step 5:
 Eliminating the unnecessary rows and columns to reduce data size
 
-> Viewing all such rows where both columns total_laid_off and percentage_laid_off are Nulls by using the SELECT statement along with WHERE condition<br />
-> Deleting all such records as they are totally useless for the upcoming calculations<br />
+> Viewing all such rows where both columns total_laid_off and percentage_laid_off are Nulls by using the SELECT statement along with WHERE condition<br /><br />
+> Deleting all such records as they are totally useless for the upcoming calculations<br /><br />
 > Lastly, dropping the column row_num as it is not needed by using the ALTER TABLE statement along with the DROP COLUMN option
