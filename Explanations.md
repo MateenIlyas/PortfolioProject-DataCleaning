@@ -6,11 +6,7 @@
 ## Download layoffs.csv from "https://www.kaggle.com/datasets/swaptr/layoffs-2022"
 ## Import the CSV file onto the database
 
-<br /><br />
-
 ---
-
-<br /><br />
 
 ### Step 1:
 Create a separate staging or working table where the computations will be performed instead of the original table
