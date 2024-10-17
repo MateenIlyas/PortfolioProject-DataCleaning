@@ -8,8 +8,11 @@
 
 ---
 
-> ### Step 1:
-> Create a separate staging or working table where the computations will be performed instead of the original table
+### Step 1:
+Create a separate staging or working table where the computations will be performed instead of the original table
+
+> This task is achieved using SQL statements such as CREATE TABLE [table_name], INSERT [table_name], as well as the LIKE [table_name]
+
 <br /><br />
 
 ### Step 2:
