@@ -10,7 +10,7 @@ SELECT *
 FROM world_layoffs.layoffs_staging2
 WHERE industry IS NULL OR industry = '';
 
--- Displaying all data with compan column having 'Appsmith'
+-- Displaying all data with the company column having 'Appsmith'
 SELECT *
 FROM world_layoffs.layoffs_staging2
 WHERE company = 'Appsmith';
@@ -30,7 +30,7 @@ UPDATE world_layoffs.layoffs_staging2
 SET industry = NULL
 WHERE industry = '';
 
--- Joining all columns of `layoffs_staging2` table to find multiple occurances of same company by comparing the industry column
+-- Joining all columns of the `layoffs_staging2` table to find multiple occurrences of the same company by comparing the industry column
 SELECT *
 FROM world_layoffs.layoffs_staging2 t1
 JOIN world_layoffs.layoffs_staging2 t2
@@ -39,7 +39,7 @@ JOIN world_layoffs.layoffs_staging2 t2
 WHERE (t1.industry IS NULL OR t1.industry = '')
 AND (t2.industry IS NOT NULL);
 
--- Joining only the company and industry columns of `layoffs_staging2` table in such a way that the industry column is compared to find multiple occurances of same company
+-- Joining only the company and industry columns of the `layoffs_staging2` table in such a way that the industry column is compared to find multiple occurrences of the same company
 SELECT t1.company, t1.industry, t2.company, t2.industry
 FROM world_layoffs.layoffs_staging2 t1
 JOIN world_layoffs.layoffs_staging2 t2
@@ -48,7 +48,7 @@ JOIN world_layoffs.layoffs_staging2 t2
 WHERE (t1.industry IS NULL OR t1.industry = '')
 AND (t2.industry IS NOT NULL);
 
--- Updating industry column of `layoffs_staging2` table by finding multiple occurances of the same company after comparison of the industry column
+-- Updating the industry column of the `layoffs_staging2` table by finding multiple occurrences of the same company after comparison of the industry column
 UPDATE world_layoffs.layoffs_staging2 t1
 JOIN world_layoffs.layoffs_staging2 t2
 	ON t1.company = t2.company
@@ -56,7 +56,7 @@ SET t1.industry = t2.industry
 WHERE (t1.industry IS NULL OR t1.industry = '')
 AND (t2.industry IS NOT NULL);
 
--- Joining only the company and industry columns of `layoffs_staging2` table in such a way that the industry column is compared to find multiple occurances of same company
+-- Joining only the company and industry columns of the `layoffs_staging2` table in such a way that the industry column is compared to find multiple occurrences of the same company
 SELECT t1.company, t1.industry, t2.company, t2.industry
 FROM world_layoffs.layoffs_staging2 t1
 JOIN world_layoffs.layoffs_staging2 t2
@@ -65,7 +65,7 @@ JOIN world_layoffs.layoffs_staging2 t2
 WHERE (t1.industry IS NULL)
 AND (t2.industry IS NOT NULL);
 
--- Updating industry column of `layoffs_staging2` table by finding multiple occurances of the same company after comparison of the industry column
+-- Updating the industry column of the `layoffs_staging2` table by finding multiple occurrences of the same company after comparison of the industry column
 UPDATE world_layoffs.layoffs_staging2 t1
 JOIN world_layoffs.layoffs_staging2 t2
 	ON t1.company = t2.company
@@ -99,7 +99,7 @@ UPDATE world_layoffs.layoffs_staging2
 SET funds_raised = NULL
 WHERE funds_raised = '';
 
--- Updating the column location of `layoffs_staging2` table with Nulls instead of Blanks 
+-- Updating the column location of the `layoffs_staging2` table with Nulls instead of Blanks 
 UPDATE world_layoffs.layoffs_staging2
 SET location = NULL
 WHERE location = '';
