@@ -1,19 +1,19 @@
 -- Performing the Step 2: Removing Duplicates
 
--- Attaching a new column with row numbers which will be greater than 1 if same record appears multiple times
+-- Attaching a new column with row numbers that will be greater than 1 if the same record appears multiple times
 SELECT *, ROW_NUMBER() OVER (PARTITION BY
 	company,  location, industry, total_laid_off, percentage_laid_off, `date`, stage, country, funds_raised
 ) AS row_num
 FROM world_layoffs.layoffs_staging;
 
--- Same search result but only ordered in ascending manner on company column
+-- Same search result but only ordered in ascending manner on the company column
 SELECT *, ROW_NUMBER() OVER (PARTITION BY
 	company,  location, industry, total_laid_off, percentage_laid_off, `date`, stage, country, funds_raised
 ) AS row_num
 FROM world_layoffs.layoffs_staging
 ORDER BY company ASC;
 
--- Making a duplicates CTE to find the row nums greater than 1
+-- Making a duplicate CTE to find the row nums greater than 1
 WITH duplicates_cte AS
 (
 SELECT *, ROW_NUMBER() OVER (PARTITION BY
@@ -30,7 +30,7 @@ SELECT *
 FROM world_layoffs.layoffs_staging
 WHERE company = 'Cazoo';
 
--- Attaching a new column with row numbers which will be greater than 1 if same record appears multiple times
+-- Attaching a new column with row numbers that will be greater than 1 if the same record appears multiple times
 WITH duplicates_cte AS
 (
 SELECT *, ROW_NUMBER() OVER (PARTITION BY
