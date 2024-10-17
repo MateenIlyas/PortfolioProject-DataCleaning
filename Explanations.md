@@ -1,4 +1,4 @@
-<img width="1269" alt="image" src="https://github.com/user-attachments/assets/ae8db789-70e5-407c-a501-04c44b6b64bd"># PortfolioProject-DataCleaning
+# PortfolioProject-DataCleaning
 
 ---
 
