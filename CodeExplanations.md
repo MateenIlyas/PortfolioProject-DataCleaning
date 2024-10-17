@@ -18,13 +18,13 @@ Create a separate staging or working table where the computations will be perfor
 ### Step 2:
 Removing Duplicates
 
-> At first, we will attach a new column row_num, to identify multiple occurrences of the same records<br />
-> This is done by using the ROW_NUMBER() function along with the OVER() with PARTITION BY inside it<br />
-> After that, the rows where the row_num is greater than 1 are identified<br />
-> This is done by using the CTE and then applying the WHERE condition<br />
-> The duplicate rows will be removed<br />
-> We will use CTE to fetch those records and then use the DELETE statement to delete them from the table.
-> The next step is to create yet another new table and copy the distinct records<br />
+> At first, we will attach a new column row_num, to identify multiple occurrences of the same records<br /><br />
+> This is done by using the ROW_NUMBER() function along with the OVER() with PARTITION BY inside it<br /><br />
+> After that, the rows where the row_num is greater than 1 are identified<br /><br />
+> This is done by using the CTE and then applying the WHERE condition<br /><br />
+> The duplicate rows will be removed<br /><br />
+> We will use CTE to fetch those records and then use the DELETE statement to delete them from the table.<br /><br />
+> The next step is to create yet another new table and copy the distinct records<br /><br />
 > Further processes will be done on that new table
 
 <br />
