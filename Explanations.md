@@ -1,4 +1,4 @@
-# PortfolioProject-DataCleaning
+<img width="1269" alt="image" src="https://github.com/user-attachments/assets/ae8db789-70e5-407c-a501-04c44b6b64bd"># PortfolioProject-DataCleaning
 
 ---
 
@@ -13,7 +13,7 @@ Create a separate staging or working table where the computations will be perfor
 
 > This task is achieved using SQL statements such as CREATE TABLE [table_name], INSERT [table_name], as well as the LIKE [table_name]
 
-<br /><br />
+<br />
 
 ### Step 2:
 Removing Duplicates
@@ -24,8 +24,10 @@ Removing Duplicates
 > This is done by using the CTE and then applying the WHERE condition<br />
 > The duplicate rows will be removed<br />
 > We will use CTE to fetch those records and then use the DELETE statement to delete them from the table.
+> The next step is to create yet another new table and copy the distinct records<br />
+> Further processes will be done on that new table
 
-<br /><br />
+<br />
 
 ### Step 3:
 Standardize the alphabet, numbers, or characters in the data
