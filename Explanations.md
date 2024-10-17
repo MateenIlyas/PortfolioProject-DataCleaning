@@ -17,6 +17,14 @@ Create a separate staging or working table where the computations will be perfor
 
 ### Step 2:
 Removing Duplicates
+
+> At first, we will attach a new column row_num, to identify multiple occurrences of the same records
+> This is done by using the ROW_NUMBER() function along with the OVER() with PARTITION BY inside it
+> After that, the rows where the row_num is greater than 1 are identified
+> This is done by using the CTE, and then applying WHERE condition
+> The duplicate rows will be removed
+> We will use CTE to fetch those records, and then use the DELETE statement to delete them from the table.
+
 <br /><br />
 
 ### Step 3:
