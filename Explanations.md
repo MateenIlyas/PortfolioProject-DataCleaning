@@ -8,8 +8,8 @@
 
 ---
 
-### Step 1:
-Create a separate staging or working table where the computations will be performed instead of the original table
+> ### Step 1:
+> Create a separate staging or working table where the computations will be performed instead of the original table
 <br /><br />
 
 ### Step 2:
