@@ -45,9 +45,20 @@ Standardize the alphabet, numbers, or characters in the data
 
 ### Step 4:
 Removing all Nulls or blanks
-<br /><br />
+
+> At first, check whether there are any Nulls or Blanks in the industry column by using IS NULL or = ''<br />
+> Manually set the industry that was left blank for a particular company by using the UPDATE TABLE statement<br />
+> Set the values as Nulls instead of Blanks '' for the industry column<br />
+> JOIN the same table ON the company column to find multiple occurrences of the same company with blanks/nulls in some cases and not nulls/blanks in others<br />
+> Updating the table to populate the industry name for multiple occurrences of the same company<br />
+> Set the values as Nulls instead of Blanks '' for the total_laid_off column<br />
+> Set the values as Nulls instead of Blanks '' for the percentage_laid_off column<br />
+> Set the values as Nulls instead of Blanks '' for the funds_raised column<br />
+> Set the values as Nulls instead of Blanks '' for the location column
+
+<br />
 
 ### Step 5:
 Eliminating the unnecessary columns to reduce data size
-<br /><br />
 
+> 
